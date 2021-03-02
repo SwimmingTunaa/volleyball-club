@@ -80,7 +80,7 @@ nav {
 }
 
 #hero {
-  background-image: url(./img/net.jpg);
+  background-image: url(/img/net.jpg);
   height: 100vh;
   text-align: center;
 }
@@ -106,7 +106,7 @@ p {
 
 #background1 {
   height: 80vh;
-  background-image: url(./img/sunset2.jpg);
+  background-image: url(/img/sunset2.jpg);
 }
 
 #background1 h1 {
@@ -116,7 +116,7 @@ p {
 
 #background2 {
   height: 80vh;
-  background-image: url(./img/Volleball_close.jpg);
+  background-image: url(/img/Volleball_close.jpg);
   background-position: center;
 }
 
@@ -129,7 +129,7 @@ p {
 
 #background3 {
   height: 80vh;
-  background-image: url(./img/topview.jpg);
+  background-image: url(/img/topview.jpg);
 }
 
 #background3 h1 {
