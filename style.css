@@ -1,0 +1,241 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffbd59;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jcc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.jcr {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.parralax {
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.half-vh {
+  height: 50vh;
+}
+
+h1 {
+  line-height: 0.6;
+}
+
+header {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 6.25rem;
+  border-bottom: #ffbd59 solid 2px;
+  position: fixed;
+  background-color: white;
+  -webkit-box-shadow: 0 3px 3px 2px rgba(0, 0, 0, 0.247);
+          box-shadow: 0 3px 3px 2px rgba(0, 0, 0, 0.247);
+  z-index: 10;
+}
+
+header img {
+  height: 70%;
+  margin-left: 3.125rem;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 3.125rem;
+  width: 30%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#hero {
+  background-image: url(/img/net.jpg);
+  height: 100vh;
+  text-align: center;
+}
+
+#hero h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+#hero div {
+  position: absolute;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  padding: 1.4rem;
+  border: #ffbd59 solid 2px;
+}
+
+p {
+  width: 50%;
+  line-height: 1.4;
+  font-size: 1.25rem;
+}
+
+#background1 {
+  height: 80vh;
+  background-image: url(/img/sunset2.jpg);
+}
+
+#background1 h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+#background2 {
+  height: 80vh;
+  background-image: url(/img/Volleball_close.jpg);
+  background-position: center;
+}
+
+#background2 h1 {
+  border: #ffbd59 solid 3px;
+  padding: 1.5rem;
+  color: white;
+  font-size: 3rem;
+}
+
+#background3 {
+  height: 80vh;
+  background-image: url(/img/topview.jpg);
+}
+
+#background3 h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+#training {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  border-top: #ffbd59 solid 3px;
+  -webkit-box-shadow: 0px -3px 5px 1px rgba(0, 0, 0, 0.308);
+          box-shadow: 0px -3px 5px 1px rgba(0, 0, 0, 0.308);
+}
+
+#training h1 {
+  width: 70%;
+  color: #ffbd59;
+  line-height: 1.3;
+}
+
+.lessons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+}
+
+.lesson {
+  border: #5495a9 solid 1px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 40%;
+}
+
+.lesson h2 {
+  color: #5495a9;
+}
+
+.lesson li {
+  text-align: left;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+  header img {
+    margin-left: 1rem;
+  }
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #hero {
+    background-position: center;
+  }
+  #hero h1 {
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0;
+  }
+  #hero div {
+    margin: 0;
+  }
+  p {
+    width: 90%;
+    font-size: 1rem;
+  }
+  h1 {
+    line-height: 1;
+  }
+  #training {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    min-height: 100vh;
+  }
+  #training h1 {
+    font-size: 0.8rem;
+    width: 70%;
+    padding-top: 2rem;
+  }
+  .lessons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 100%;
+  }
+  .lesson {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

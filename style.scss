@@ -1,0 +1,206 @@
+$main-yellow: #ffbd59;
+$light-yellow: #ffde59;
+$sky-blue: #5495a9;
+$text-grey: #c4c4c4;
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $main-yellow;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+  text-align: center;
+}
+
+.jcr {
+  justify-content: flex-end;
+}
+.parralax {
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.half-vh {
+  height: 50vh;
+}
+h1 {
+  line-height: 0.6;
+}
+
+header {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 6.25rem;
+  border-bottom: $main-yellow solid 2px;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 3px 3px 2px rgba(0, 0, 0, 0.247);
+  z-index: 10;
+  img {
+    height: 70%;
+    margin-left: 3.125rem;
+  }
+}
+
+nav {
+  display: flex;
+  margin-right: 3.125rem;
+  width: 30%;
+  justify-content: space-around;
+}
+
+#hero {
+  background-image: url(/img/net.jpg);
+  height: 100vh;
+  text-align: center;
+  h1 {
+    color: white;
+    font-size: 3rem;
+  }
+  div {
+    position: absolute;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    padding: 1.4rem;
+    border: $main-yellow solid 2px;
+  }
+}
+
+p {
+  width: 50%;
+  line-height: 1.4;
+  font-size: 1.25rem;
+}
+
+#background1 {
+  height: 80vh;
+  background-image: url(/img/sunset2.jpg);
+  h1 {
+    color: white;
+    font-size: 3rem;
+  }
+}
+
+#background2 {
+  height: 80vh;
+  background-image: url(/img/Volleball_close.jpg);
+  background-position: center;
+  h1 {
+    border: $main-yellow solid 3px;
+    padding: 1.5rem;
+    color: white;
+    font-size: 3rem;
+  }
+}
+
+#background3 {
+  height: 80vh;
+  background-image: url(/img/topview.jpg);
+  h1 {
+    color: white;
+    font-size: 3rem;
+  }
+}
+
+#training {
+  flex-direction: column;
+  height: 100vh;
+  border-top: $main-yellow solid 3px;
+  box-shadow: 0px -3px 5px 1px rgba(0, 0, 0, 0.308);
+  h1 {
+    width: 70%;
+    color: $main-yellow;
+    line-height: 1.3;
+  }
+}
+
+.lessons {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.lesson {
+  border: $sky-blue solid 1px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 40%;
+  h2 {
+    color: $sky-blue;
+  }
+  li {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    img {
+      margin-left: 1rem;
+    }
+  }
+  nav {
+    flex-direction: column;
+  }
+
+  #hero {
+    background-position: center;
+    h1 {
+      font-size: 2rem;
+      line-height: 1;
+      margin: 0;
+    }
+    div {
+      margin: 0;
+    }
+  }
+  p {
+    width: 90%;
+    font-size: 1rem;
+  }
+  h1 {
+    line-height: 1;
+  }
+  #training {
+    justify-content: flex-start;
+    min-height: 100vh;
+    h1 {
+      font-size: 0.8rem;
+      width: 70%;
+      padding-top: 2rem;
+    }
+  }
+  .lessons {
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  .lesson {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
